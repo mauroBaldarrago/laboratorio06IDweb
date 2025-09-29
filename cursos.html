@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cursos</title>
+</head>
+<body>
+    <header>
+    <h1>Página de Cursos</h1>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="registro.html">Registro</a> |
+        <a href="lenguajes.html">Lenguajes</a> |
+        <a href="validación.html">Validación</a> |
+        <a href="cursos.html">Cursos</a>
+    </nav>
+    </header>
+
+    <h2>Inscripción a un Curso</h2>
+    <form action="#" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br><br>
+
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido" required>
+        <br><br>
+
+        <label for="dni">Documento de Identidad: </label>
+        <input type="text" name="dni" id="dni" placeholder="12345678" pattern="\d{8}" required>
+        <br><br>
+
+        <label for="correo">Correo: </label>
+        <input type="email" name="correo" id="correo" placeholder="ejemplo@correo.com" required>
+        <br><br>
+
+        <label for="curso">Selección de curso: </label>
+        <input type="radio" name="curso" id="curso1" value="HTML" required> HTML
+        <input type="radio" name="curso" id="curso2" value="CSS" required> CSS
+        <input type="radio" name="curso" id="curso3 "value="JavaScript" required> JavaScript
+        <br><br>
+
+        <label for="modalidad">Modalidad: </label>
+        <input type="radio" name="modalidad" id="virtual" value="Virtual" required> Virtual
+        <input type="radio" name="modalidad" id="presencial" value="Presencial" required> Presencial
+        <br><br>
+
+        <label for="horarios">Horarios disponibles: </label>
+        <select id="horarios" name="horarios[]" multiple size="3" required>
+            <option value="mañana!">Mañana </option>
+            <option value="tarde!">Tarde</option>
+            <option value="noche!">Noche</option>
+        </select>
+        <br><br>
+
+        <label for="comentarios">Comentarios: </label>
+        <input type="text" name="comentarios" id="comentarios" rows="4" cols="40" placeholder="Escribe aquí tus comentarios">
+
+        <input type="submit" value="Suscribirse">
+        <input type="reset" value="Reiniciar Formulario">
+    </form>
+
+</body>
+</html>
