@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lenguajes</title>
+</head>
+<body>
+    <header>
+    <h1>Página de lenguajes</h1>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="registro.html">Registro</a> |
+        <a href="lenguajes.html">Lenguajes</a>
+    </nav>
+    </header>
+
+    <form action="#" method="post">
+        <h1>Fomulario de Preferencias</h1>
+
+        <label for="fotoPerfil">Sube tu foto de perfil:</label>
+        <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*" required>
+        <br><br>
+
+        <label for="lenguajes">¿Qué lenguajes conoces?</label>
+        <select id="lenguajes" name="lenguajes[]" multiple size="5" required>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+        </select>
+        <br><br>
+        
+        <label for="Horas de programación">¿Cuántas horas de programación estudias al día?</label>
+        <input type="number" min="1" max="10" id="horas" name="horas" required>
+        <br><br>
+
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
